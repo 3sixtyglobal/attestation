@@ -1,5 +1,5 @@
 {
-	"name": "@3sixty/attestation",
+	"name": "3sixty-attestation",
 	"version": "0.0.0",
 	"description": "Attestation packages and CLI tooling.",
 	"repository": {
