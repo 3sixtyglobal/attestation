@@ -1,7 +1,7 @@
 // Copyright 2024 IOTA Stiftung.
 // SPDX-License-Identifier: Apache-2.0.
 import path from "node:path";
-import { Is } from "@3sixty/core";
+import { Bip39 } from "@3sixty/crypto";
 import { MemoryEntityStorageConnector } from "@3sixty/entity-storage-connector-memory";
 import { EntityStorageConnectorFactory } from "@3sixty/entity-storage-models";
 import {
@@ -40,17 +40,7 @@ dotenv.config({
 	quiet: true
 });
 
-if (!Is.stringValue(process.env.TEST_MNEMONIC)) {
-	throw new Error(
-		`Please define TEST_MNEMONIC as a 24 word mnemonic either as an environment variable or inside an .env.dev file
-		 e.g. TEST_MNEMONIC="word0 word1 ... word23"
-		 You can generate one using the following command
-		 npx "@3sixty/crypto-cli" mnemonic --env ./tests/.env.dev --env-prefix TEST_`
-	);
-}
-
 export const TEST_IDENTITY_ID = "test-identity";
-export const TEST_MNEMONIC_NAME = "test-mnemonic";
 
 initSchemaVault();
 initSchemaWallet();
@@ -85,7 +75,7 @@ FaucetConnectorFactory.register("faucet", () => TEST_FAUCET_CONNECTOR);
 
 export const TEST_WALLET_CONNECTOR = new EntityStorageWalletConnector({
 	config: {
-		vaultMnemonicId: TEST_MNEMONIC_NAME
+		vaultMnemonicId: "test-mnemonic"
 	}
 });
 WalletConnectorFactory.register("wallet", () => TEST_WALLET_CONNECTOR);
@@ -108,10 +98,7 @@ EntityStorageConnectorFactory.register("nft", () => nftEntityStorage);
 export const TEST_NFT_CONNECTOR = new EntityStorageNftConnector();
 NftConnectorFactory.register("nft", () => TEST_NFT_CONNECTOR);
 
-await TEST_VAULT_CONNECTOR.setSecret(
-	`${TEST_IDENTITY_ID}/${TEST_MNEMONIC_NAME}`,
-	process.env.TEST_MNEMONIC
-);
+await TEST_VAULT_CONNECTOR.setSecret(`${TEST_IDENTITY_ID}/test-mnemonic`, Bip39.randomMnemonic());
 
 const addresses = await TEST_WALLET_CONNECTOR.getAddresses(TEST_IDENTITY_ID, 0, 0, 2);
 export const TEST_IDENTITY_ADDRESS = addresses[0];
