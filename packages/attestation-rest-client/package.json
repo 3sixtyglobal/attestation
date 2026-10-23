@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/attestation-rest-client",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "REST client for calling attestation service endpoints.",
 	"repository": {
 		"type": "git",
@@ -30,7 +30,7 @@
 	"dependencies": {
 		"@3sixty/api-core": "next",
 		"@3sixty/api-models": "next",
-		"@3sixty/attestation-models": "0.20.0-next.0",
+		"@3sixty/attestation-models": "0.20.0-next.1",
 		"@3sixty/core": "next",
 		"@3sixty/data-json-ld": "next",
 		"@3sixty/entity": "next",
@@ -39,7 +39,7 @@
 		"@3sixty/web": "next"
 	},
 	"devDependencies": {
-		"@3sixty/attestation-models": "0.20.0-next.0",
+		"@3sixty/attestation-models": "0.20.0-next.1",
 		"@3sixty/nameof-transformer": "next",
 		"@3sixty/nameof-vitest-plugin": "next",
 		"@3sixty/standards-schema-org": "next",
