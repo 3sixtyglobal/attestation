@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/attestation-connector-open-attestation",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "Attestation connector for OpenAttestation-compatible document workflows.",
 	"repository": {
 		"type": "git",
@@ -28,7 +28,7 @@
 		"dist:no-test": "pnpm run clean && concurrently -g -n build,locales,types \"pnpm run build\" \"pnpm run validate-locales\" \"pnpm run test:build\""
 	},
 	"dependencies": {
-		"@3sixty/attestation-models": "0.20.0-next.0",
+		"@3sixty/attestation-models": "0.20.0-next.1",
 		"@3sixty/core": "next",
 		"@3sixty/data-json-ld": "next",
 		"@3sixty/entity": "next",
