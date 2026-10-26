@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/attestation-cli",
-	"version": "0.20.0-next.1",
+	"version": "0.20.0-next.2",
 	"description": "Command line tool for creating and managing attestations.",
 	"repository": {
 		"type": "git",
@@ -31,7 +31,7 @@
 		"dist:no-test": "pnpm run clean && pnpm run merge-locales && concurrently -g -n build,locales,types \"pnpm run build\" \"pnpm run validate-locales\" \"pnpm run test:build\""
 	},
 	"dependencies": {
-		"@3sixty/attestation-connector-nft": "0.20.0-next.1",
+		"@3sixty/attestation-connector-nft": "0.20.0-next.2",
 		"@3sixty/cli-core": "next",
 		"@3sixty/core": "next",
 		"@3sixty/crypto-cli": "next",
