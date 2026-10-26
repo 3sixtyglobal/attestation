@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.20.0-next.2](https://github.com/3sixtyglobal/attestation/compare/attestation-rest-client-v0.20.0-next.1...attestation-rest-client-v0.20.0-next.2) (2026-10-26)
+
+
+### Features
+
+* release to next [skip ci] ([#5](https://github.com/3sixtyglobal/attestation/issues/5)) ([a73f1f1](https://github.com/3sixtyglobal/attestation/commit/a73f1f1131c94c0830a84c711997aca0c0138843))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @3sixty/attestation-models bumped from 0.20.0-next.1 to 0.20.0-next.2
+
 ## [0.20.0-next.1](https://github.com/3sixtyglobal/attestation/compare/attestation-rest-client-v0.20.0-next.0...attestation-rest-client-v0.20.0-next.1) (2026-10-23)
 
 
