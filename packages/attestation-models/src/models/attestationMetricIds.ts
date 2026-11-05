@@ -4,7 +4,6 @@
 /**
  * Metric IDs for the attestation service.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const AttestationMetricIds = {
 	/**
 	 * Number of attestations created.

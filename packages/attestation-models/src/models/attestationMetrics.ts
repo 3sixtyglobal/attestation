@@ -6,7 +6,6 @@ import { AttestationMetricIds } from "./attestationMetricIds.js";
 /**
  * Metrics registered by the attestation service.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const AttestationMetrics: ITelemetryMetric[] = [
 	{
 		id: AttestationMetricIds.AttestationCreated,

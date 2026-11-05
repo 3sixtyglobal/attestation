@@ -70,7 +70,7 @@ export function generateRestRoutesAttestation(
 								"@context": "https://schema.org",
 								type: "DigitalDocument",
 								name: "bill-of-lading",
-								mimeType: "application/pdf",
+								mimeType: MimeTypes.Pdf,
 								fingerprint: "0xf0b95a98b3dbc5ce1c9ce59d70af95a97599f100a7296ecdd1eb108bebfa047f"
 							}
 						}
@@ -141,7 +141,7 @@ export function generateRestRoutesAttestation(
 									"@context": "https://schema.org",
 									type: "DigitalDocument",
 									name: "bill-of-lading",
-									mimeType: "application/pdf",
+									mimeType: MimeTypes.Pdf,
 									fingerprint: "0xf0b95a98b3dbc5ce1c9ce59d70af95a97599f100a7296ecdd1eb108bebfa047f"
 								},
 								proof: {
@@ -172,7 +172,7 @@ export function generateRestRoutesAttestation(
 									"@context": "https://schema.org",
 									type: "DigitalDocument",
 									name: "bill-of-lading",
-									mimeType: "application/pdf",
+									mimeType: MimeTypes.Pdf,
 									fingerprint: "0xf0b95a98b3dbc5ce1c9ce59d70af95a97599f100a7296ecdd1eb108bebfa047f"
 								},
 								proof: {
@@ -209,7 +209,7 @@ export function generateRestRoutesAttestation(
 									"@context": "https://schema.org",
 									type: "DigitalDocument",
 									name: "bill-of-lading",
-									mimeType: "application/pdf",
+									mimeType: MimeTypes.Pdf,
 									fingerprint: "0xf0b95a98b3dbc5ce1c9ce59d70af95a97599f100a7296ecdd1eb108bebfa047f"
 								},
 								proof: {
@@ -240,7 +240,7 @@ export function generateRestRoutesAttestation(
 									"@context": "https://schema.org",
 									type: "DigitalDocument",
 									name: "bill-of-lading",
-									mimeType: "application/pdf",
+									mimeType: MimeTypes.Pdf,
 									fingerprint: "0xf0b95a98b3dbc5ce1c9ce59d70af95a97599f100a7296ecdd1eb108bebfa047f"
 								},
 								proof: {

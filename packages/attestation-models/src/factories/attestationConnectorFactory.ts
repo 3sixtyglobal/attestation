@@ -6,6 +6,5 @@ import type { IAttestationConnector } from "../models/IAttestationConnector.js";
 /**
  * Factory for creating attestation connectors.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const AttestationConnectorFactory =
 	Factory.createFactory<IAttestationConnector>("attestation");

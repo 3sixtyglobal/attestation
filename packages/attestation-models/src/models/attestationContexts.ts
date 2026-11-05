@@ -4,7 +4,6 @@
 /**
  * The contexts of attestation data.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const AttestationContexts = {
 	/**
 	 * The canonical RDF namespace URI for Attestation.
